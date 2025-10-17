@@ -3,7 +3,7 @@ secondary_name: ""
 navbar_name: "Jianrong Zhang"
 
 positions:
-- logo: /assets/images/badges/FDU_blue.png  # Logo is optional
+- logo: /assets/images/badges/FDU_blue.jpg  # Logo is optional
   name: Fudan University
 
 
@@ -35,13 +35,13 @@ portrait_caption: >-
 
 education:
 - name: Fudan University
-  logo: /assets/images/badges/FDU_blue.png
+  logo: /assets/images/badges/FDU_blue.jpg
   position: >- 
     College of Integrated Circuits and Micro-Nano Electronics <br/>
     Ph.D. Student
   date: 2025.09 - present
 - name: Fudan University
-  logo: /assets/images/badges/FDU_blue.png
+  logo: /assets/images/badges/FDU_blue.jpg
   position: B.E. in Microelectronics
   date: 2021.09 - 2025.06
 
