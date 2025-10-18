@@ -23,8 +23,11 @@
     <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
         {{content}}
     </div>
-    <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=80b3d7&w=400&t=tt&d=1fjWRYAngGlBaQo4ogNapSyGaaD4QwXlp4_hFOF7nNM&co=f8f9fa&cmn=c6eead&cmo=f5d88b&ct=000000'></script>
-    <br />
+    {% if page.url == "/" %}
+        <br />
+        <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=80b3d7&w=400&t=tt&d=1fjWRYAngGlBaQo4ogNapSyGaaD4QwXlp4_hFOF7nNM&co=f8f9fa&cmn=c6eead&cmo=f5d88b&ct=000000'></script>
+        <br />
+    {% endif %}
     {% include footer.html %}
 
     <!-- Scripts -->
