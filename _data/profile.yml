@@ -47,11 +47,15 @@ education:
   position: B.E. in Microelectronics
   date: 2021.09 - 2025.06
 
-# experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+experience:
+- name: Peking University
+  logo: /assets/images/badges/PKU_red.png
+  position: Visiting Researcher(one month)
+  date: Jul. 2025
+- name: Nanyang Technological University
+  logo: /assets/images/badges/ntu.png
+  position: Visiting Student(one week)
+  date: Jan. 2025
 
 awards:
 - name: Bachelor of Engineering with <strong>Honors</strong>
@@ -61,6 +65,8 @@ awards:
 - name: Wang-dao Scholar of FDUROP(Fudan Undergraduate Research Opportunities Program)
   date: 2025
 - name: First-Class Scholarship of Fudan University
-  date: 2024
+  date: 2025
 - name: Outstanding Undergraduate Student of Fudan University (<strong>twice</strong>)
+  date: 2024, 2023
+- name: Second-Class Scholarship of Fudan University (<strong>twice</strong>)
   date: 2024, 2023
