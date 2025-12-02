@@ -22,7 +22,7 @@ github: Starryskyz
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    Hi! I am currently pursuing a Ph.D. degree in the College of Integrated Circuits and Micro-Nano Electronics at Fudan University in Shanghai, China, 
+    Hi! I am currently pursuing a Ph.D. degree in the <a href="https://icmne.fudan.edu.cn" target="_blank">College of Integrated Circuits and Micro-Nano Electronics(ICMNE)</a> at Fudan University in Shanghai, China, 
     under the supervision of Prof. <a href="https://icmne.fudan.edu.cn/2d/43/c48925a732483/page.htm" target="_blank">Lingli Wang</a>. 
     I received my B.E. in Microelectronics from Fudan University in 2025. My research interests include:
     <ul>
@@ -58,7 +58,7 @@ experience:
   date: Jan. 2025
 
 awards:
-- name: National First Prize(also Problem-05 Champion) of China Postgraduate IC Innovation Competition·EDA Elite Challenge Contest
+- name: National First Prize (also Problem-05 Champion) of China Postgraduate IC Innovation Competition·EDA Elite Challenge Contest
   date: 2025
 - name: Bachelor of Engineering with <strong>Honors</strong>
   date: 2025
