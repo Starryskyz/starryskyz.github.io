@@ -2,27 +2,31 @@
 
 <div class="my-3 bg-white shadow-sm rounded-xl">
     <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-rss"></i> News</h6>
-    <div class="px-3 pb-1">
+    <div class="px-4 pb-4">
         {% for year in news_by_year %}
-        <div class="media py-1 {% if not_first -%}border-top border-gray{%- endif %}">
-            {% assign not_first = true %}
-            <div class="mr-3 text-muted my-1">{{ year.name }}</div>
-            <div class="media-body">
-                {% for item in year.items %}
-                <div class="my-1 d-flex">
-                    <div class="text-muted mr-3" style="flex-shrink: 0; width: 80px;">
-                        <i>{{ item.date | date: "%b %d" }}</i>
-                    </div>
-                    <div style="flex-grow: 1;">
-                        {{ item.title }}
-                    </div>
+        <div class="timeline-year">{{ year.name }}</div>
+        <div>
+            {% for item in year.items %}
+            <div class="timeline-item">
+                <div class="timeline-date">
+                    {{ item.date | date: "%b %d" }}
                 </div>
-                {% endfor %}
+                <div class="timeline-marker">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-title">{{ item.title }}</div>
+                </div>
             </div>
+            {% endfor %}
         </div>
         {% endfor %}
     </div>
-    <h6 class="d-block p-3 mt-0 text-right">
+    {% assign news_count = site.news | size %}
+    {% if include.limit %}
+    <h6 class="d-block py-2 px-3 mt-0 text-right border-top border-gray">
         <a href="{{ 'news' | relative_url }}"> View all news <i class="fas fa-angle-double-right"></i></a>
     </h6>
+    {% endif %}
 </div>
