@@ -20,6 +20,7 @@ authors:
   - Huan Lin
   - Wenbo Yin
   - Lingli Wang
-#links:
-  #paper: https://ieeexplore.ieee.org/document/11132704
+links:
+  paper: https://ieeexplore.ieee.org/document/11562155
+  poster: /assets/images/posters/livedemoISCAS26.png
 ---
