@@ -5,7 +5,7 @@ selected:       true
 pub:            "International Symposium of Electronics Design Automation (ISEDA)"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'
-pub_last:       ' <span class="badge badge-pill badge-publication badge-warning">Best paper candidate</span>'
+pub_last:       ' <span class="badge badge-pill badge-publication badge-warning">Best Paper Candidate</span>'
 pub_date:       "2026"
 #semantic_scholar_id: b7f7c9912089092229ba8a87cfae996a36517020  # use this to retrieve citation count
 abstract: >-
