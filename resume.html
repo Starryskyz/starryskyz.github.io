@@ -1,0 +1,48 @@
+---
+layout: default
+title: Resume
+navbar_title: Resume
+container_class: container-xl
+---
+
+<style>
+    .resume-shell {
+        min-height: calc(100vh - 220px);
+    }
+
+    .resume-frame {
+        width: 100%;
+        height: calc(100vh - 220px);
+        min-height: 780px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.75rem;
+        background: #fff;
+        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.05);
+    }
+
+    .resume-meta {
+        color: #6c757d;
+        font-size: 0.95rem;
+    }
+</style>
+
+{% assign resume_pdf = '/assets/images/cv/cv20260722cnen.pdf' | relative_url %}
+
+<div class="resume-shell py-4">
+    <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
+        <div>
+            <h1 class="mb-1">Resume</h1>
+            <div class="resume-meta">PDF preview embedded below. Use the button to open or download the file.</div>
+        </div>
+        <a class="btn btn-dark" href="{{ resume_pdf }}" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-file-pdf mr-2"></i>Open PDF
+        </a>
+    </div>
+
+    <iframe
+        class="resume-frame"
+        src="{{ resume_pdf }}"
+        title="Resume PDF"
+        loading="lazy"
+    ></iframe>
+</div>
