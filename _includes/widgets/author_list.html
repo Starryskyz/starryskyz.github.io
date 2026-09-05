@@ -1,4 +1,8 @@
 {%- assign authors = include.authors -%}
+{%- assign show_footnote = include.show_footnote -%}
+{%- if show_footnote == nil -%}
+{%- assign show_footnote = true -%}
+{%- endif -%}
 {%- assign has_eq_contrib = false -%}
 {%- assign has_corresponding = false -%}
 
@@ -47,7 +51,7 @@
 
 {%- endfor -%}
 
-{%- if has_eq_contrib or has_corresponding %}
+{%- if show_footnote and (has_eq_contrib or has_corresponding) %}
 (
     {%- if has_eq_contrib -%}
         * <i> equal contribution</i>

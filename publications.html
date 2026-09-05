@@ -11,6 +11,7 @@ navbar_title: Publications
         <h2 class="pt-4">Journal Papers</h2>
         <ul class="pl-4">
             {% assign journal_count = 0 %}
+            {% assign journal_index = 0 %}
             {% for item in pubs %}
                 {% assign venue = item.pub | default: '' %}
                 {% assign is_journal = false %}
@@ -18,8 +19,9 @@ navbar_title: Publications
                     {% assign is_journal = true %}
                 {% endif %}
                 {% if is_journal %}
+                    {% assign journal_index = journal_index | plus: 1 %}
                     {% assign journal_count = journal_count | plus: 1 %}
-                    <li class="mb-2">{% include widgets/publication_bullet_item.html item=item %}</li>
+                    <li class="mb-2">{% include widgets/publication_bullet_item.html item=item prefix='J' index=journal_index %}</li>
                 {% endif %}
             {% endfor %}
         </ul>
@@ -29,6 +31,7 @@ navbar_title: Publications
 
         <h2 class="pt-4">Conference Papers</h2>
         <ul class="pl-4 mb-0">
+            {% assign conference_index = 0 %}
             {% for item in pubs %}
                 {% assign venue = item.pub | default: '' %}
                 {% assign is_journal = false %}
@@ -36,7 +39,8 @@ navbar_title: Publications
                     {% assign is_journal = true %}
                 {% endif %}
                 {% unless is_journal %}
-                    <li class="mb-2">{% include widgets/publication_bullet_item.html item=item %}</li>
+                    {% assign conference_index = conference_index | plus: 1 %}
+                    <li class="mb-2">{% include widgets/publication_bullet_item.html item=item prefix='C' index=conference_index %}</li>
                 {% endunless %}
             {% endfor %}
         </ul>
