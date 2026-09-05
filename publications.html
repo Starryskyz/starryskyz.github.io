@@ -6,11 +6,25 @@ navbar_title: Publications
 
 {% assign pubs = site.publications | sort: "date" | reverse %}
 
+{% assign journal_count = 0 %}
+{% assign conference_count = 0 %}
+{% for item in pubs %}
+    {% assign venue = item.pub | default: '' %}
+    {% assign is_journal = false %}
+    {% if item.paper_type == 'journal' or venue contains 'Transactions' or venue contains 'Journal' or venue contains 'Letters' or venue contains 'Magazine' %}
+        {% assign is_journal = true %}
+    {% endif %}
+    {% if is_journal %}
+        {% assign journal_count = journal_count | plus: 1 %}
+    {% else %}
+        {% assign conference_count = conference_count | plus: 1 %}
+    {% endif %}
+{% endfor %}
+
 <div class="row">
     <div class="col-12 col-lg-10">
         <h2 class="pt-4">Journal Papers</h2>
         <ul class="pl-4">
-            {% assign journal_count = 0 %}
             {% assign journal_index = 0 %}
             {% for item in pubs %}
                 {% assign venue = item.pub | default: '' %}
@@ -20,8 +34,8 @@ navbar_title: Publications
                 {% endif %}
                 {% if is_journal %}
                     {% assign journal_index = journal_index | plus: 1 %}
-                    {% assign journal_count = journal_count | plus: 1 %}
-                    <li class="mb-2">{% include widgets/publication_bullet_item.html item=item prefix='J' index=journal_index %}</li>
+                    {% assign display_index = journal_count | minus: journal_index | plus: 1 %}
+                    <li class="mb-2">{% include widgets/publication_bullet_item.html item=item prefix='J' index=display_index %}</li>
                 {% endif %}
             {% endfor %}
         </ul>
@@ -40,7 +54,8 @@ navbar_title: Publications
                 {% endif %}
                 {% unless is_journal %}
                     {% assign conference_index = conference_index | plus: 1 %}
-                    <li class="mb-2">{% include widgets/publication_bullet_item.html item=item prefix='C' index=conference_index %}</li>
+                    {% assign display_index = conference_count | minus: conference_index | plus: 1 %}
+                    <li class="mb-2">{% include widgets/publication_bullet_item.html item=item prefix='C' index=display_index %}</li>
                 {% endunless %}
             {% endfor %}
         </ul>
