@@ -2,6 +2,7 @@
 layout: default
 title : Publications
 navbar_title: Publications
+container_class: container-fluid
 ---
 
 {% assign pubs = site.publications | sort: "date" | reverse %}
@@ -21,8 +22,8 @@ navbar_title: Publications
     {% endif %}
 {% endfor %}
 
-<div class="row">
-    <div class="col-12 col-lg-10">
+<div class="my-3 bg-white shadow-sm rounded-xl">
+    <div class="px-4 pb-4">
         <h2 class="pt-4">Journal Papers</h2>
         <ul class="pl-4">
             {% assign journal_index = 0 %}
