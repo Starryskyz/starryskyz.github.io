@@ -2,6 +2,7 @@
 title:          "An MLIR-Based Compilation Flow for CGRAs: Optimized CDFG Generation, Control-Flow Handling, and Scalability"
 date:           2026-03-27 00:00:00 +0800
 selected:       true
+paper_type:     conference
 pub:            "International Symposium of Electronics Design Automation (ISEDA)"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'

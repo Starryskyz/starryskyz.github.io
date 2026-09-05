@@ -1,0 +1,7 @@
+{% assign item = include.item %}
+{% assign venue = item.pub | default: '' %}
+{% assign year = item.pub_date %}
+{% if year == nil or year == '' %}
+{% assign year = item.date | date: '%Y' %}
+{% endif %}
+<span>{% include widgets/author_list.html authors=item.authors %}, &ldquo;{% if item.links.paper %}<a target="_blank" href="{{ item.links.paper }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}&rdquo;, <i>{{ venue }}</i>, {{ year }}{{ item.pub_last }}</span>

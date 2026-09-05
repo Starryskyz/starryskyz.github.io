@@ -2,6 +2,7 @@
 title:          "LEMOE: LLM-Enhanced Multi-Objective Bayesian Optimization for Microarchitecture Exploration"
 date:           2025-09-15 00:00:00 +0800
 selected:       true
+paper_type:     conference
 pub:            "ACM/IEEE Design Automation Conference (DAC)"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'

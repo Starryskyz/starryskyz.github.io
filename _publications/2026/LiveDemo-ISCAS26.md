@@ -2,6 +2,7 @@
 title:          "Live Demonstration: An Agile FPGA-Overlayed CGRA SoC for High-Efficiency Computing"
 date:           2026-01-10 00:00:00 +0800
 selected:       true
+paper_type:     conference
 pub:            "IEEE International Symposium on Circuits and Systems (ISCAS)"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'
