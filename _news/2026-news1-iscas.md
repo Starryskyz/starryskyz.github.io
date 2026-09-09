@@ -1,6 +1,5 @@
 ---
 title: 
-    One co-first author paper was accepted by <strong>ISCAS 2026</strong>. We will show a demo of our proposed agile FPGA-overlayed CGRA-SoC targeting image processing and large language model inference acceleration at session B1P-18(2026-05-26 10:00-12:00). Welcome to have a look!
-
+    "One co-first author paper was accepted by <strong>ISCAS 2026</strong>. We will show a demo of our proposed agile FPGA-overlayed CGRA-SoC targeting image processing and large language model inference acceleration. <span class='hover-image-wrap' style='position:relative;display:inline-block;margin-left:6px;' onmouseenter=\"this.querySelector('.hover-image-preview').style.display='block'\" onmouseleave=\"this.querySelector('.hover-image-preview').style.display='none'\"><span class='hover-image-trigger' style='color:#0d6efd;cursor:pointer;'>Hover to see the photo</span><span class='hover-image-preview' style='display:none;position:absolute;left:50%;top:1.8em;transform:translateX(-50%);z-index:10;width:min(420px,80vw);padding:8px;background:rgba(255,255,255,0.98);border:1px solid rgba(0,0,0,0.12);border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,0.18);'><img src='/assets/images/photos/ISCAS26onsite.jpg' alt='ISCAS 2026 Live Demo' style='display:block;width:100%;height:auto;border-radius:8px;'></span></span>"
 date: 2026-1-20 
 ---
