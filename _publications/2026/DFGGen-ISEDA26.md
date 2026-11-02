@@ -24,6 +24,6 @@ authors:
   - Lingli Wang
   - Yu He
   - Qing He
-#links:
-  #paper: https://ieeexplore.ieee.org/document/11132704
+links:
+  paper: https://ieeexplore.ieee.org/document/11751507
 ---
