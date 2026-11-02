@@ -68,6 +68,26 @@
                         </div>
                     </div>
                     {% endif %}
+                    </div>
+
+                    {% if site.data.profile.services %}
+                    <div class="col-md-12">
+                        <div class="mx-2 my-1">
+                            <h6>Academic Services</h6>
+                            <ul class="list medium pl-3 mb-1">
+                                {% for item in site.data.profile.academic_services %}
+                                <li>
+                                    <div class="small d-flex">
+                                        <div><strong>{{ item.name }}: </strong></div>
+                                        <div class="no-break">{{ item.content }}</div>
+                                    </div>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    {% endif %}
+
 
                 </div>
 
